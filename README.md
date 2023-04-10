@@ -9,6 +9,8 @@
   * [Validando a instalação](#validando-a-instalação)
     + [Docker](#docker-2)
     + [Podman](#podman-2)
+  * [Container vs Maquina Virtual](#container-vs-maquina-virtual)
+  * [O que é um container?](#o-que-é-um-container)
 
 # java-container-example
 
