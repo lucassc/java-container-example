@@ -18,20 +18,23 @@
 
 Requisitos:
   - WSL2
-  - Docker ou podman
+  - Docker ou podman (Escolha um dos dois)
 
 
 ### WSL2 
-
-  [Instalar o Linux no Windows com o WSL](https://learn.microsoft.com/pt-br/windows/wsl/install)
+  - [Instalar o Linux no Windows com o WSL](https://learn.microsoft.com/pt-br/windows/wsl/install)
 
 ### Docker 
 
-  [Youtube: Instalar Docker no Windows - Passo a Passo](https://www.youtube.com/watch?v=sYsIoWtS5LY)
+(se voce optou pelo podman ignore esse passo)
+
+  - [Youtube: Instalar Docker no Windows - Passo a Passo](https://www.youtube.com/watch?v=sYsIoWtS5LY)
 
 ### Podman 
 
-  [Instalando o podman (alternativa ao Docker Desktop)](https://educoutinho.com.br/windows/instalando-podman-alternativa-docker-desktop/)
+(se voce optou pelo docker ignore esse passo)
+
+  - [Instalando o podman (alternativa ao Docker Desktop)](https://educoutinho.com.br/windows/instalando-podman-alternativa-docker-desktop/)
 
 
 ## Linux
@@ -41,11 +44,15 @@ Requisitos:
 
 ### Docker 
 
+(se voce optou pelo podman ignore esse passo)
+
   - [Install Docker Engine](https://docs.docker.com/desktop/install/linux-install/)
 
 or
   - [Install Docker Desktop on Linux](https://docs.docker.com/desktop/install/linux-install/)
 ### Podman 
+
+(se voce optou pelo docker ignore esse passo)
 
   [Podman Installation Instructions - Installing on Linux ](https://podman.io/getting-started/installation.html#installing-on-linux)
 
@@ -53,6 +60,9 @@ or
 ## Validando a instalação
 
 ### Docker
+
+(se voce optou pelo podman ignore esse passo)
+
 ```BASH
 sudo docker run hello-world
 ```
@@ -62,12 +72,34 @@ Esta mensagem mostra que sua instalação parece estar funcionando corretamente
 ![docker-hello-world](./docs/imgs/docker-hello-world.png)
 
 ### Podman
+
+(se voce optou pelo docker ignore esse passo)
+
 ```BASH
 podman run hello-world
 ```
 
 ![podman-hello-world](./docs/imgs/podman-hello-world.png)
 
+## Build e RUN
+
+### Construindo a imagem a partir do Dockerfile
+```BASH
+# Se voce estiver usando docker
+sudo docker build -t java-container-example:0.0.1 .
+
+# Se voce estiver usando podman
+podman build -t java-container-example:0.0.1 .
+```
+
+### Criando e rodando o container
+```BASH
+# Se voce estiver usando docker
+sudo docker run --interactive java-container-example:0.0.1
+
+# Se voce estiver usando podman
+podman run --interactive java-container-example:0.0.1
+```
 
 ## Container vs Maquina Virtual
 

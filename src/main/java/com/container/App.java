@@ -15,9 +15,9 @@ public class App {
         String message = scanner.nextLine();
 
         System.out.println("Escolha um formato:");
-        System.out.println("1. Mensagem in uppercase");
-        System.out.println("2. Mensagem in lowercase");
-        System.out.println("3. Date time + Mensagem");
+        System.out.println("1. Mensagem em uppercase");
+        System.out.println("2. Mensagem em lowercase");
+        System.out.println("3. Date time + mensagem");
         System.out.println("4. Mensagem de trás pra frente");
         System.out.print("Digite o numero do formato: ");
         int formatNumber = scanner.nextInt();

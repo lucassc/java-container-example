@@ -1,0 +1,4 @@
+#### Este arquivo é utilizando para ignorar arquivos no comando COPY to Dockerfile
+
+# ignorar arquivos de log
+*.log
